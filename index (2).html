@@ -124,12 +124,19 @@ p{margin:0 0 1rem}
 .btn{
   display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;
   font-family:var(--sans);font-weight:700;font-size:1.02rem;
-  padding:.62rem 1.15rem;border-radius:3px;border:0;
-  transition:background-color .15s ease,color .15s ease;
+  padding:.72rem 1.35rem;border-radius:999px;border:0;
+  transition:transform .15s ease, box-shadow .2s ease, background-color .15s ease,color .15s ease;
+  box-shadow:0 10px 22px rgba(0,0,0,.18);
 }
+.btn:hover{transform:translateY(-1px)}
 .btn:active{transform:translateY(1px)}
-.btn-zap{background:var(--barro);color:#FFF6EC;box-shadow:inset 0 0 0 1px rgba(247,241,227,.32)}
-.btn-zap:hover{background:var(--barro-claro)}
+.btn-zap{
+  background:linear-gradient(180deg,#E28043 0%,#C0512B 100%);
+  color:#FFF7F0;
+  box-shadow:0 14px 28px rgba(192,81,43,.42), inset 0 0 0 1px rgba(255,255,255,.28);
+  letter-spacing:.02em;
+}
+.btn-zap:hover{background:linear-gradient(180deg,#E68E5B 0%,#D86136 100%)}
 .btn-ghost{color:var(--cal);box-shadow:inset 0 0 0 1px rgba(247,241,227,.55)}
 .btn-ghost:hover{background:var(--cal);color:var(--mole)}
 .btn svg{width:18px;height:18px;fill:currentColor;flex-shrink:0}
@@ -148,6 +155,8 @@ p{margin:0 0 1rem}
 .hero h1{font-size:clamp(1.9rem,1.1rem + 3.1vw,3.1rem);max-width:15ch;margin:0 auto 1.1rem}
 .hero .lead{margin:0 auto 2rem;color:#F3E6D2}
 .hero-cta{display:flex;gap:.85rem;justify-content:center;flex-wrap:wrap}
+.hero-cta .btn-zap{padding:.85rem 1.7rem;min-width:210px;justify-content:center}
+.hero-cta .btn-zap .btn-text{font-size:1.06rem}
 .stars{display:inline-flex;align-items:center;gap:.5rem;margin-top:2.25rem;font-size:.92rem;color:#E6D3B4;text-decoration:none}
 .stars b{color:var(--oro);font-size:1.05rem}
 .stars:hover span{text-decoration:underline}
