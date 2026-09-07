@@ -256,6 +256,108 @@ p{margin:0 0 1rem}
 .carta-nome{font-family:var(--serif);font-size:1.05rem;color:var(--barro);display:block;margin-bottom:.35rem}
 .carta p{margin:0;font-size:.88rem;color:#6B5645;line-height:1.5}
 
+/* ---------- faq / dúvidas frequentes ---------- */
+.faq{background:var(--mole);position:relative}
+.faq-topo{max-width:68ch;margin-bottom:clamp(2rem,4vw,3rem)}
+.faq-topo h2{margin-bottom:.8rem}
+.faq-topo p{color:#EBD9BE}
+
+.faq-controls{
+  display:flex;flex-direction:column;gap:1.2rem;margin-bottom:2.2rem;
+  background:rgba(18,22,27,.6);padding:1.25rem;border-radius:10px;
+  border:1px solid rgba(217,164,65,.25);
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+.faq-search-wrap{position:relative;width:100%}
+.faq-search-wrap svg{
+  position:absolute;left:1.1rem;top:50%;transform:translateY(-50%);
+  width:20px;height:20px;fill:none;stroke:var(--oro);stroke-width:2.2;pointer-events:none;
+}
+.faq-search{
+  width:100%;padding:.95rem 1.1rem .95rem 3.1rem;
+  background:#171C23;border:1.5px solid rgba(217,164,65,.4);border-radius:6px;
+  color:var(--cal);font-family:var(--sans);font-size:1.05rem;
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+.faq-search:focus{outline:none;border-color:var(--oro);box-shadow:0 0 0 3px rgba(225,160,58,.25)}
+.faq-search::placeholder{color:#9E8772}
+
+.faq-filters-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.faq-tabs{display:flex;gap:.5rem;flex-wrap:wrap}
+.faq-tab{
+  background:rgba(245,231,206,.08);border:1px solid rgba(245,231,206,.18);
+  color:var(--cal);padding:.55rem 1.1rem;border-radius:999px;font-family:var(--sans);
+  font-size:.95rem;font-weight:500;cursor:pointer;transition:all .2s ease;
+}
+.faq-tab:hover{background:rgba(225,160,58,.18);border-color:var(--oro);color:var(--oro)}
+.faq-tab.active{background:var(--barro);border-color:var(--barro-claro);color:#fff;box-shadow:0 4px 12px rgba(192,81,43,.35)}
+
+.faq-toggle-all{
+  background:none;border:none;color:var(--oro);font-family:var(--sans);
+  font-size:.95rem;font-weight:700;cursor:pointer;text-decoration:underline;
+  padding:.4rem .6rem;border-radius:4px;transition:color .2s ease;
+}
+.faq-toggle-all:hover{color:#fff}
+
+.faq-grid{display:grid;gap:1rem}
+.faq-item{
+  background:#181E27;border:1px solid rgba(217,164,65,.2);border-radius:8px;
+  overflow:hidden;transition:border-color .2s ease, box-shadow .2s ease;
+}
+.faq-item[open]{border-color:var(--oro);box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.faq-item summary{
+  padding:1.2rem 1.4rem;font-family:var(--sans);font-weight:700;font-size:1.15rem;
+  color:var(--cal);cursor:pointer;list-style:none;display:flex;align-items:center;
+  justify-content:space-between;gap:1rem;user-select:none;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{color:var(--oro);background:rgba(225,160,58,.04)}
+.faq-title-wrap{display:flex;align-items:center;gap:.75rem;flex:1;flex-wrap:wrap}
+.faq-badge{
+  font-size:.78rem;font-weight:700;padding:.2rem .6rem;border-radius:4px;
+  text-transform:uppercase;letter-spacing:.05em;flex-shrink:0;
+}
+.faq-badge.rodizio{background:rgba(192,81,43,.25);color:var(--barro-claro);border:1px solid rgba(192,81,43,.4)}
+.faq-badge.reservas{background:rgba(214,21,107,.25);color:#F27BB0;border:1px solid rgba(214,21,107,.4)}
+.faq-badge.pagamento{background:rgba(44,140,140,.25);color:#5ED4D4;border:1px solid rgba(44,140,140,.4)}
+.faq-badge.espaco{background:rgba(30,74,56,.4);color:#5FBE84;border:1px solid rgba(30,74,56,.8)}
+
+.faq-icon{
+  width:24px;height:24px;flex:none;fill:none;stroke:var(--oro);stroke-width:2.2;
+  transition:transform .3s cubic-bezier(.4,0,.2,1);stroke-linecap:round;
+}
+.faq-item[open] .faq-icon{transform:rotate(180deg)}
+
+.faq-resposta{
+  padding:0 1.4rem 1.35rem 1.4rem;color:#E8D8C4;font-size:1.05rem;line-height:1.7;
+  border-top:1px dashed rgba(217,164,65,.2);margin-top:.4rem;padding-top:1rem;
+}
+.faq-resposta strong{color:var(--oro)}
+.faq-resposta ul{margin:.6rem 0 .9rem 1.2rem;padding:0}
+.faq-resposta li{margin-bottom:.35rem}
+.faq-action-btn{
+  display:inline-flex;align-items:center;gap:.4rem;margin-top:.75rem;
+  background:rgba(225,160,58,.15);border:1px solid var(--oro);color:var(--oro);
+  padding:.45rem .9rem;border-radius:4px;font-size:.92rem;font-weight:700;
+  text-decoration:none;transition:all .2s ease;
+}
+.faq-action-btn:hover{background:var(--oro);color:var(--tinta)}
+
+.faq-empty{
+  text-align:center;padding:3rem 1.5rem;background:#181E27;border-radius:8px;
+  border:1px dashed rgba(217,164,65,.3);color:#EBD9BE;
+}
+.faq-empty p{font-size:1.15rem;margin-bottom:1.2rem}
+
+.faq-cta-card{
+  margin-top:3rem;background:linear-gradient(135deg,var(--mole-2) 0%, #26080D 100%);
+  border:2px solid var(--barro);border-radius:10px;padding:clamp(1.5rem,4vw,2.5rem);
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;
+  box-shadow:0 14px 35px rgba(0,0,0,.4);
+}
+.faq-cta-info h3{font-family:var(--serif);color:var(--oro);margin-bottom:.4rem;font-size:1.35rem}
+.faq-cta-info p{margin:0;color:#EBD9BE;font-size:1.02rem}
+
 /* ---------- visite ---------- */
 .visite-grid{display:grid;gap:clamp(2rem,5vw,3rem);grid-template-columns:1fr}
 @media (min-width:900px){.visite-grid{grid-template-columns:.85fr 1.15fr}}
@@ -339,6 +441,7 @@ p{margin:0 0 1rem}
         <li><a href="#rodizio">Rodízio</a></li>
         <li><a href="#cardapio">Cardápio</a></li>
         <li><a href="#casa">A casa</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
         <li><a href="#visite">Onde estamos</a></li>
       </ul>
     </nav>
@@ -359,6 +462,7 @@ p{margin:0 0 1rem}
         <li><a class="item" href="#rodizio">Rodízio</a></li>
         <li><a class="item" href="#cardapio">Cardápio</a></li>
         <li><a class="item" href="#casa">A casa</a></li>
+        <li><a class="item" href="#faq">Dúvidas</a></li>
         <li><a class="item" href="#visite">Onde estamos</a></li>
       </ul>
       <p class="status" data-status hidden><i aria-hidden="true"></i><span></span></p>
@@ -562,6 +666,237 @@ p{margin:0 0 1rem}
 
   <div class="sarape" aria-hidden="true"></div>
 
+  <!-- ============ FAQ / DÚVIDAS FREQUENTES ============ -->
+  <section class="band faq" id="faq">
+    <div class="wrap">
+      <div class="faq-topo">
+        <h2>Dúvidas Frequentes</h2>
+        <p class="lead">Tudo o que você precisa saber antes de saborear o melhor da gastronomia mexicana no Chalé Guadalupe.</p>
+      </div>
+
+      <div class="faq-controls">
+        <div class="faq-search-wrap">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="faqSearch" class="faq-search" placeholder="Digite sua dúvida (ex: reserva, rodízio, vegetariano, pimenta, crianças)..." aria-label="Buscar pergunta frequente">
+        </div>
+
+        <div class="faq-filters-bar">
+          <div class="faq-tabs" role="tablist" aria-label="Categorias de dúvidas">
+            <button type="button" class="faq-tab active" data-cat="all">Todas as dúvidas</button>
+            <button type="button" class="faq-tab" data-cat="rodizio">🌮 Rodízio & Cardápio</button>
+            <button type="button" class="faq-tab" data-cat="reservas">📅 Reservas & Aniversários</button>
+            <button type="button" class="faq-tab" data-cat="pagamento">💳 Pagamento & Serviços</button>
+            <button type="button" class="faq-tab" data-cat="espaco">📍 Espaço & Estacionamento</button>
+          </div>
+          <button type="button" class="faq-toggle-all" id="faqToggleAll">Expandir todas</button>
+        </div>
+      </div>
+
+      <div class="faq-grid" id="faqList">
+
+        <!-- Item 1 -->
+        <details class="faq-item" data-cat="rodizio" data-keywords="rodizio incluso pratos tacos burritos fajitas enchiladas nachos guacamole reposicao">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge rodizio">Rodízio</span>
+              <span>O que está incluso no rodízio mexicano do Chalé Guadalupe?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>O nosso rodízio é completo e variado! Ele inclui reposição à vontade de:</p>
+            <ul>
+              <li><strong>Tacos:</strong> Carne louca, carne moída temperada, frango desfiado e opções vegetarianas.</li>
+              <li><strong>Burritos & Enchiladas:</strong> Recheados, dourados e cobertos com molho especial da casa.</li>
+              <li><strong>Fajitas:</strong> Tiras grelhadas servidas bem quentinhas na chapa.</li>
+              <li><strong>Acompanhamentos ilimitados:</strong> Nachos crocantes, guacamole fresca, sour cream, pico de gallo e frijoles.</li>
+            </ul>
+            <a href="#cardapio" class="faq-action-btn">Ver o cardápio completo</a>
+          </div>
+        </details>
+
+        <!-- Item 2 -->
+        <details class="faq-item" data-cat="rodizio" data-keywords="pimenta picante ardido forte fraco molho molhos pimentas coragem">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge rodizio">Rodízio</span>
+              <span>A comida mexicana é muito apimentada? E para quem não gosta de pimenta?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Fique totalmente tranquilo! No Chalé Guadalupe, <strong>a pimenta é servida estritamente à parte</strong>. Os pratos são preparados com temperos saborosos e aromáticos, sem ardência obrigatória. Nossos molhos de pimenta artesanais ficam na mesa em potes separados, do mais suave ao extra forte. Quem decide a coragem é você!</p>
+          </div>
+        </details>
+
+        <!-- Item 3 -->
+        <details class="faq-item" data-cat="rodizio" data-keywords="vegetariano vegetariana vegano gluten celíaco restricao feijao milho intolerante">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge rodizio">Cardápio</span>
+              <span>Existem opções para vegetarianos, veganos ou pessoas com restrições a glúten?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Sim! Valorizamos a diversidade do nosso público:</p>
+            <ul>
+              <li><strong>Vegetarianos:</strong> Possuímos pratos recheados com frijoles (feijão mexicano), queijos derretidos, vegetais grelhados e guacamole.</li>
+              <li><strong>Sem Glúten:</strong> Trabalhamos com tortillas 100% de milho e pratos à base de nachos de milho e feijão. Avise nosso garçom para orientações sobre contaminação cruzada.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Item 4 -->
+        <details class="faq-item" data-cat="reservas" data-keywords="reserva reservar mesa fila espera final de semana sabado sexta grupo grupos whatsapp">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge reservas">Reservas</span>
+              <span>Preciso fazer reserva ou vocês atendem por ordem de chegada?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Atendemos tanto por ordem de chegada quanto por reserva prévia. Porém, para <strong>sextas, sábados e noites movimentadas</strong>, ou para grupos acima de 4 pessoas, <strong>recomendamos fortemente garantir sua reserva antecipada pelo WhatsApp</strong> para evitar filas de espera.</p>
+            <a href="https://wa.me/5516981182375" target="_blank" rel="noopener" class="faq-action-btn">Garantir reserva no WhatsApp</a>
+          </div>
+        </details>
+
+        <!-- Item 5 -->
+        <details class="faq-item" data-cat="reservas" data-keywords="crianca criancas meia entrada valor preco idade gratis 4 anos 5 anos 10 anos">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge reservas">Família</span>
+              <span>Qual é a política de valores para crianças no rodízio?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Nossa política para os pequenos é muito simples e transparente:</p>
+            <ul>
+              <li><strong>Até 4 anos:</strong> Não pagam o rodízio (cortesia da casa).</li>
+              <li><strong>De 5 a 10 anos:</strong> Pagam <strong>meia-entrada</strong> (50% do valor do rodízio adulto).</li>
+              <li><strong>A partir de 11 anos:</strong> Valor integral.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Item 6 -->
+        <details class="faq-item" data-cat="reservas" data-keywords="aniversario aniversariante parabens comemoracao festa brinde bolo sobremesa">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge reservas">Comemoração</span>
+              <span>Vou comemorar meu aniversário. O Chalé Guadalupe tem alguma cortesia?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>¡Feliz cumpleaños! Adoramos celebrar com você! Aniversariantes que comemoram conosco acompanhados de convidados ganham uma <strong>sobremesa especial cortesia da casa</strong> e uma comemoração animada. Avise nossa equipe ao fazer a reserva!</p>
+            <a href="https://wa.me/5516981182375" target="_blank" rel="noopener" class="faq-action-btn">Reservar mesa de aniversário</a>
+          </div>
+        </details>
+
+        <!-- Item 7 -->
+        <details class="faq-item" data-cat="pagamento" data-keywords="pagamento pix cartao credito debito vale refeicao alelo sodexo ticket vr">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge pagamento">Pagamento</span>
+              <span>Quais são as formas de pagamento aceitas no restaurante?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Aceitamos uma grande variedade de formas de pagamento para sua comodidade:</p>
+            <ul>
+              <li><strong>Pix:</strong> Pagamento instantâneo via QR Code na mesa.</li>
+              <li><strong>Cartões de Crédito e Débito:</strong> Visa, Mastercard, Elo, Amex e Hipercard.</li>
+              <li><strong>Vales-Refeição (VR/VA):</strong> Aceitamos as principais bandeiras de refeição da região.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Item 8 -->
+        <details class="faq-item" data-cat="pagamento" data-keywords="delivery entrega buscar retirada buscar marmita em casa marmitex">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge pagamento">Serviços</span>
+              <span>Vocês fazem delivery ou apenas consumo no salão?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Nosso foco principal é a <strong>experiência presencial no salão</strong> com rodízio quente e ambiente temático. Porém, oferecemos a opção de <strong>pedidos para retirada no local (Takeout)</strong>. Você pode encomendar seus pratos pelo WhatsApp e retirar quentinho no restaurante.</p>
+          </div>
+        </details>
+
+        <!-- Item 9 -->
+        <details class="faq-item" data-cat="pagamento" data-keywords="bebidas vinho rolha taxa de rolha cerveja margarita tequila chopp">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge pagamento">Bebidas</span>
+              <span>Posso levar meu próprio vinho? Vocês cobram taxa de rolha?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Possuímos uma carta completa de drinks temáticos (como nossas famosas <strong>Margaritas artesanais</strong>, shots de Tequila e cervejas trincando de geladas). Caso deseje levar seu vinho especial para a ocasião, cobramos uma taxa de rolha simbólica por garrafa.</p>
+          </div>
+        </details>
+
+        <!-- Item 10 -->
+        <details class="faq-item" data-cat="espaco" data-keywords="ar condicionado climatizado acessibilidade cadeirante rampa ambiente salao banheiros">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge espaco">Ambiente</span>
+              <span>O restaurante é climatizado e acessível para pessoas com mobilidade reduzida?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Sim! Nosso salão conta com <strong>ambiente totalmente climatizado</strong> para seu conforto em qualquer época do ano. Além disso, temos acesso plano e adaptado sem degraus para cadeirantes, idosos e carrinhos de bebê, garantindo conforto a toda a família.</p>
+          </div>
+        </details>
+
+        <!-- Item 11 -->
+        <details class="faq-item" data-cat="espaco" data-keywords="estacionamento onde parar carro rua rua jonas deocleciano ribeiro franca vagoes">
+          <summary>
+            <div class="faq-title-wrap">
+              <span class="faq-badge espaco">Localização</span>
+              <span>Onde fica o restaurante e como funciona o estacionamento?</span>
+            </div>
+            <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-resposta">
+            <p>Estamos na <strong>Rua Jonas Deocleciano Ribeiro, 779 - Vila Champagnat, Franca/SP</strong>. É uma localização residencial muito tranquila e segura, com <strong>bastante facilidade para estacionar gratuitamente</strong> nas duas calçadas ao redor do restaurante.</p>
+            <a href="#visite" class="faq-action-btn">Ver mapa e rotas de localização</a>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Estado Vazio -->
+      <div class="faq-empty" id="faqEmpty" hidden>
+        <p>🔍 Nenhuma dúvida encontrada para o termo digitado.</p>
+        <a href="https://wa.me/5516981182375" target="_blank" rel="noopener" class="btn btn-zap">Conversar diretamente no WhatsApp</a>
+      </div>
+
+      <!-- Card CTA -->
+      <div class="faq-cta-card">
+        <div class="faq-cta-info">
+          <h3>Ainda ficou com alguma dúvida?</h3>
+          <p>Nossa equipe está à disposição no WhatsApp para responder qualquer pergunta e preparar sua mesa.</p>
+        </div>
+        <a class="btn btn-zap" href="https://wa.me/5516981182375" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.5-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.7-.1 1.3Z"/></svg>
+          Falar com a equipe
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sarape" aria-hidden="true"></div>
+
   <!-- ============ VISITE ============ -->
   <section class="band" id="visite">
     <div class="wrap visite-grid">
@@ -708,11 +1043,74 @@ p{margin:0 0 1rem}
         if (alvo) alvo.setAttribute('aria-current', 'true');
       });
     }, {rootMargin:'-45% 0px -50% 0px'});
-    ['rodizio','cardapio','casa','visite'].forEach(function (id) {
+    ['rodizio','cardapio','casa','faq','visite'].forEach(function (id) {
       var s = document.getElementById(id);
       if (s) olho.observe(s);
     });
   }
+
+  /* lógica da seção FAQ (Busca e Filtros) */
+  (function () {
+    var searchInput = document.getElementById('faqSearch');
+    var tabs = document.querySelectorAll('.faq-tab');
+    var items = document.querySelectorAll('.faq-item');
+    var emptyBox = document.getElementById('faqEmpty');
+    var toggleBtn = document.getElementById('faqToggleAll');
+
+    if (!searchInput || !items.length) return;
+
+    var currentCat = 'all';
+    var currentTerm = '';
+
+    function filterFAQ() {
+      var visiveis = 0;
+      items.forEach(function (item) {
+        var cat = item.getAttribute('data-cat');
+        var text = (item.textContent + ' ' + (item.getAttribute('data-keywords') || '')).toLowerCase();
+
+        var matchCat = (currentCat === 'all' || cat === currentCat);
+        var matchSearch = (!currentTerm || text.indexOf(currentTerm) !== -1);
+
+        if (matchCat && matchSearch) {
+          item.style.display = '';
+          visiveis++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      if (emptyBox) {
+        emptyBox.hidden = (visiveis > 0);
+      }
+    }
+
+    searchInput.addEventListener('input', function () {
+      currentTerm = searchInput.value.toLowerCase().trim();
+      filterFAQ();
+    });
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+        currentCat = tab.getAttribute('data-cat');
+        filterFAQ();
+      });
+    });
+
+    if (toggleBtn) {
+      var expanded = false;
+      toggleBtn.addEventListener('click', function () {
+        expanded = !expanded;
+        items.forEach(function (item) {
+          if (item.style.display !== 'none') {
+            item.open = expanded;
+          }
+        });
+        toggleBtn.textContent = expanded ? 'Recolher todas' : 'Expandir todas';
+      });
+    }
+  })();
 </script>
 </body>
 </html>
