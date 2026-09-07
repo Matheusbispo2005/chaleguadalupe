@@ -159,7 +159,13 @@ p{margin:0 0 1rem}
   color:#F8E3B3;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
 }
 .hero-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--oro);box-shadow:0 0 0 4px rgba(225,160,58,.14)}
-.hero h1{font-size:clamp(1.9rem,1.1rem + 3.1vw,3.1rem);max-width:15ch;margin:0 auto 1.1rem}
+.hero h1{
+  color:#FFF4DF;
+  font-size:clamp(2.1rem,1.2rem + 3.5vw,3.6rem);
+  max-width:15ch;
+  margin:0 auto 1.1rem;
+  text-shadow:0 4px 18px rgba(0,0,0,.45);
+}
 .hero .lead{margin:0 auto 2rem;color:#F3E6D2}
 .hero-cta{display:flex;gap:.85rem;justify-content:center;flex-wrap:wrap}
 .hero-cta .btn-zap{padding:.85rem 1.7rem;min-width:210px;justify-content:center}
@@ -1022,12 +1028,18 @@ p{margin:0 0 1rem}
 
   /* menu do celular */
   var botao = document.getElementById('menuBtn'), painel = document.getElementById('painel');
-  function fechaMenu() { painel.hidden = true; botao.setAttribute('aria-expanded','false'); botao.setAttribute('aria-label','Abrir menu'); }
+  function fechaMenu() {
+    painel.hidden = true;
+    botao.setAttribute('aria-expanded','false');
+    botao.setAttribute('aria-label','Abrir menu');
+    botao.focus();
+  }
   botao.addEventListener('click', function () {
     var abrir = painel.hidden;
     painel.hidden = !abrir;
     botao.setAttribute('aria-expanded', String(abrir));
     botao.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+    if (abrir) painel.querySelector('.item').focus();
   });
   painel.addEventListener('click', function (e) { if (e.target.closest('a')) fechaMenu(); });
   addEventListener('keydown', function (e) { if (e.key === 'Escape') fechaMenu(); });
