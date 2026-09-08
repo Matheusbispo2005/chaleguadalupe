@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chalé Guadalupe — Restaurante mexicano em Franca/SP</title>
+<meta name="description" content="Rodízio mexicano, tacos, burritos, fajitas e enchiladas em Franca/SP. Pimenta sempre à parte. Rua Jonas Deocleciano Ribeiro, 779 — Vila Champagnat.">
+<meta property="og:title" content="Chalé Guadalupe — Restaurante mexicano em Franca/SP">
+<meta property="og:description" content="Rodízio mexicano, tacos, burritos, fajitas e enchiladas. Pimenta sempre à parte.">
+<meta property="og:type" content="restaurant">
+<meta name="theme-color" content="#12161B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient%20id%3D%22dg%22%20cx%3D%2245%25%22%20cy%3D%2238%25%22%20r%3D%2270%25%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%236E1622%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23380810%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2230.5%22%20fill%3D%22url%28%23dg%29%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2230.5%22%20fill%3D%22none%22%20stroke%3D%22%232B323C%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M41.5%2026h5v12h-5z%22%20fill%3D%22%23F3E3C6%22%2F%3E%3Cpath%20d%3D%22M13.5%2044%2032%2024.5%2050.5%2044%22%20fill%3D%22none%22%20stroke%3D%22%23F3E3C6%22%20stroke-width%3D%225.4%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cg%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M32%2033.5v-5.2%22%20stroke%3D%22%23E8951E%22%20stroke-width%3D%222.4%22%2F%3E%3Cpath%20d%3D%22M27.6%2034.2%2025.6%2030%22%20stroke%3D%22%23C0392B%22%20stroke-width%3D%222.1%22%2F%3E%3Cpath%20d%3D%22M36.4%2034.2%2038.4%2030%22%20stroke%3D%22%23C0392B%22%20stroke-width%3D%222.1%22%2F%3E%3Cpath%20d%3D%22M23.8%2036.4%2021%2033.6%22%20stroke%3D%22%234E8A3C%22%20stroke-width%3D%221.9%22%2F%3E%3Cpath%20d%3D%22M40.2%2036.4%2043%2033.6%22%20stroke%3D%22%234E8A3C%22%20stroke-width%3D%221.9%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Rye&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --noite:#12161B;
+  --mole:#4A1018;
+  --mole-2:#360A11;
+  --barro:#C0512B;
+  --barro-claro:#DE7B4C;
+  --nopal:#1E4A38;
+  --oro:#E1A03A;
+  --talavera:#2C8C8C;
+  --rosa:#D6156B;        /* rosa mexicano */
+  --cal:#F5E7CE;
+  --tinta:#2B1A12;
+  --serif:"Rye","Bookman Old Style",Georgia,serif;
+  --sans:"Alegreya",Georgia,"Times New Roman",serif;
+  --gut:clamp(1.25rem,4vw,2.75rem);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--mole);color:var(--cal);
+  font-family:var(--sans);font-size:clamp(1.06rem,1rem + .3vw,1.18rem);line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px;border-radius:2px}
+
+.wrap{width:min(1120px,100% - var(--gut)*2);margin-inline:auto}
+.band{padding:clamp(3.5rem,9vw,7rem) 0}
+.oculto{position:absolute;width:0;height:0;overflow:hidden}
+
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.14;letter-spacing:0;margin:0}
+h2{font-size:clamp(1.7rem,1.15rem + 2.3vw,2.7rem)}
+h3{font-size:clamp(1.1rem,.98rem + .55vw,1.38rem);line-height:1.24}
+p{margin:0 0 1rem}
+.lead{font-size:clamp(1.1rem,1rem + .5vw,1.28rem);max-width:58ch}
+
+
+/* ---------- faixa de sarape ---------- */
+.sarape{
+  height:15px;
+  background:linear-gradient(180deg,
+    var(--oro) 0 2px, var(--barro) 2px 5px, var(--cal) 5px 6px,
+    var(--talavera) 6px 8px, var(--rosa) 8px 10px, var(--cal) 10px 11px,
+    var(--nopal) 11px 13px, var(--barro) 13px 15px);
+}
+
+/* ---------- cabeçalho ---------- */
+.nav{position:sticky;top:0;z-index:60;background:var(--noite)}
+.nav-in{display:flex;align-items:center;gap:1.1rem;min-height:72px}
+.sarape-fina{
+  height:4px;
+  background:linear-gradient(180deg,var(--oro) 0 1px,var(--barro) 1px 2px,var(--talavera) 2px 3px,var(--rosa) 3px 4px);
+}
+
+.nav-mark{display:flex;align-items:center;gap:.7rem;text-decoration:none;flex-shrink:0}
+.nav-mark .nav-selo{width:44px;height:44px;flex:none;display:block}
+.nav-mark b{font-family:var(--serif);font-weight:400;font-size:1.1rem;color:var(--cal);white-space:nowrap}
+
+.nav-risco{width:1px;align-self:stretch;margin:1.3rem 0;background:rgba(217,164,65,.3);flex:none}
+.nav-links-wrap{margin-right:auto}
+.nav-links{display:flex;gap:1.35rem;list-style:none;margin:0;padding:0}
+.nav-links a{position:relative;display:block;text-decoration:none;font-weight:500;color:#EFE0C8;padding:1rem 0}
+.nav-links a:hover{color:var(--oro)}
+.nav-links a[aria-current]{color:var(--oro)}
+.nav-links a[aria-current]::after{
+  content:"";position:absolute;left:50%;bottom:.6rem;margin-left:-4px;
+  width:8px;height:8px;background:var(--oro);transform:rotate(45deg);
+}
+
+.status{display:inline-flex;align-items:center;gap:.5rem;margin:0;font-size:.95rem;color:#C4A886;white-space:nowrap}
+.status i{width:9px;height:9px;background:#8C7460;transform:rotate(45deg);flex:none}
+.status.aberto i{background:#5FBE84}
+.status b{font-weight:700;color:var(--cal)}
+.status em{font-style:normal}
+@media (max-width:1210px){.nav-in .status em{display:none}}
+
+.menu-btn{
+  display:none;align-items:center;justify-content:center;width:44px;height:44px;padding:0;
+  background:none;border:1px solid rgba(217,164,65,.55);border-radius:3px;color:var(--cal);cursor:pointer;
+}
+.menu-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.menu-btn .ic-fechar{display:none}
+.menu-btn[aria-expanded="true"] .ic-abrir{display:none}
+.menu-btn[aria-expanded="true"] .ic-fechar{display:block}
+
+.painel{background:#0D1116;padding:.5rem 0 1.6rem}
+.painel[hidden]{display:none}
+.painel ul{list-style:none;margin:0;padding:0}
+.painel .item{display:block;padding:.9rem 0;text-decoration:none;font-size:1.15rem;font-weight:500;border-bottom:1px solid rgba(247,241,227,.12)}
+.painel .status{margin:1.2rem 0 0}
+.painel-acoes{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.1rem}
+
+@media (max-width:1023px){
+  .nav-links-wrap,.nav-risco{display:none}
+  .nav-mark{margin-right:auto}
+  .menu-btn{display:inline-flex}
+}
+@media (max-width:820px){.nav-in .status{display:none}}
+@media (max-width:620px){.nav-in .nav-cta{display:none}}
+@media (min-width:1024px){.painel{display:none}}
+.nav-in .btn{white-space:nowrap}
+
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;
+  font-family:var(--sans);font-weight:700;font-size:1.02rem;
+  padding:.62rem 1.15rem;border-radius:3px;border:0;
+  transition:background-color .15s ease,color .15s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-zap{background:var(--barro);color:#FFF6EC;box-shadow:inset 0 0 0 1px rgba(247,241,227,.32)}
+.btn-zap:hover{background:var(--barro-claro)}
+.btn-ghost{color:var(--cal);box-shadow:inset 0 0 0 1px rgba(247,241,227,.55)}
+.btn-ghost:hover{background:var(--cal);color:var(--mole)}
+.btn svg{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;text-align:center;padding:clamp(2.5rem,7vw,4.5rem) 0 0}
+.rays{
+  position:absolute;left:50%;top:-14%;width:min(160vw,1500px);aspect-ratio:1;
+  transform:translateX(-50%);pointer-events:none;
+  background:repeating-conic-gradient(from 0deg,rgba(217,164,65,.20) 0deg 1.6deg,transparent 1.6deg 5deg);
+  -webkit-mask-image:radial-gradient(closest-side,#000 12%,rgba(0,0,0,.5) 45%,transparent 72%);
+  mask-image:radial-gradient(closest-side,#000 12%,rgba(0,0,0,.5) 45%,transparent 72%);
+}
+.hero-in{position:relative}
+.hero-logo{width:min(268px,62vw);height:auto;margin:0 auto 1.9rem;filter:drop-shadow(0 18px 38px rgba(0,0,0,.55))}
+.hero h1{font-size:clamp(1.9rem,1.1rem + 3.1vw,3.1rem);max-width:15ch;margin:0 auto 1.1rem}
+.hero .lead{margin:0 auto 2rem;color:#F3E6D2}
+.hero-cta{display:flex;gap:.85rem;justify-content:center;flex-wrap:wrap}
+.stars{display:inline-flex;align-items:center;gap:.5rem;margin-top:2.25rem;font-size:.92rem;color:#E6D3B4;text-decoration:none}
+.stars b{color:var(--oro);font-size:1.05rem}
+.stars:hover span{text-decoration:underline}
+
+/* papel picado */
+.picado{display:block;width:100%;height:62px}
+.picado-topo{margin-top:clamp(2.5rem,6vw,4rem)}
+
+/* ---------- rodízio ---------- */
+.rodizio{background:var(--nopal)}
+.rodizio-grid{display:grid;gap:clamp(2rem,5vw,3.5rem);grid-template-columns:1fr;align-items:start}
+@media (min-width:900px){.rodizio-grid{grid-template-columns:1.05fr .95fr}}
+.rodizio h2{margin-bottom:1.25rem}
+.rodizio .lead{color:#DCEBE0}
+
+.ficha{background:var(--cal);color:var(--tinta);border-radius:8px;padding:clamp(1.5rem,3.5vw,2.25rem);box-shadow:0 22px 50px rgba(0,0,0,.32);position:relative}
+.ficha::after{
+  content:"";position:absolute;left:0;right:0;bottom:-11px;height:12px;
+  background:radial-gradient(circle at 8px 0,transparent 8px,var(--cal) 8.5px) repeat-x;
+  background-size:16px 12px;
+}
+.ficha h3{color:var(--barro);margin-bottom:.35rem}
+.ficha-preco{font-family:var(--serif);font-size:clamp(2rem,4vw,2.6rem);color:var(--tinta);line-height:1;margin:.4rem 0 1.25rem}
+.ficha-preco small{font-family:var(--sans);font-size:.85rem;font-weight:500;color:#6B5645;display:block;margin-top:.5rem}
+.inclui{list-style:none;margin:0 0 1.5rem;padding:0;border-top:1px dashed #C9B79B}
+.inclui li{padding:.6rem 0 .6rem 1.6rem;border-bottom:1px dashed #C9B79B;position:relative}
+.inclui li::before{content:"";position:absolute;left:0;top:1.15em;width:9px;height:9px;background:var(--talavera);transform:rotate(45deg)}
+.meia{background:var(--oro);color:var(--tinta);font-weight:700;font-size:.9rem;padding:.6rem .9rem;border-radius:6px}
+
+/* ---------- cardápio ---------- */
+.cardapio{background:var(--cal);color:var(--tinta);position:relative;overflow:hidden}
+.azulejo{position:absolute;inset:0;width:100%;height:100%;opacity:.13;pointer-events:none}
+.cardapio > .wrap{position:relative}
+.cardapio h2{color:var(--barro)}
+.cardapio .lead{color:#5C4636;margin-bottom:clamp(2rem,5vw,3rem)}
+.menu-grid{display:grid;gap:clamp(1.5rem,3.5vw,2.5rem);grid-template-columns:1fr}
+@media (min-width:760px){.menu-grid{grid-template-columns:1fr 1fr}}
+.cat{
+  background:#fffdf8;border:1px solid #E2D5BC;border-radius:150px 150px 10px 10px;
+  padding:clamp(2rem,4vw,2.75rem) clamp(1.4rem,3vw,2rem) 1.75rem;
+  box-shadow:0 10px 28px rgba(43,26,18,.07);
+}
+.cat h3{text-align:center;color:var(--barro);margin-bottom:.15rem}
+.cat-sub{text-align:center;font-size:.9rem;color:#7A6552;margin:0 0 1.5rem}
+.prato{display:flex;gap:.75rem;align-items:baseline;padding:.7rem 0;border-bottom:1px dotted #DCCDB2}
+.cat .prato:last-child{border-bottom:0}
+.prato-nome{font-weight:700}
+.prato-desc{display:block;font-weight:400;font-size:.88rem;color:#75604D;line-height:1.45}
+.prato-preco{margin-left:auto;white-space:nowrap;font-weight:700;color:var(--barro)}
+
+/* glossário */
+.glossario{
+  margin:clamp(2.5rem,5vw,3.5rem) 0 0;display:grid;gap:1rem;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+.glossario dt{font-weight:700;color:var(--barro);font-size:1.05rem}
+.glossario dd{margin:.15rem 0 0;font-size:.92rem;color:#6B5645;line-height:1.5}
+.glossario > div{border-left:3px solid var(--talavera);padding-left:.9rem}
+.nota{margin-top:2rem;font-size:.92rem;color:#6B5645;text-align:center}
+
+/* ---------- a casa / lotería ---------- */
+.casa{background:var(--mole-2)}
+.casa h2{margin-bottom:1.25rem}
+.casa .lead{color:#EBD9BE}
+.casa-topo{max-width:60ch;margin-bottom:clamp(2.5rem,5vw,3.5rem)}
+.baraja{display:grid;gap:clamp(1rem,2.5vw,1.5rem);grid-template-columns:1fr 1fr}
+@media (min-width:820px){.baraja{grid-template-columns:repeat(4,1fr)}}
+.carta{
+  margin:0;
+  background:var(--cal);color:var(--tinta);border-radius:6px;
+  padding:.55rem;position:relative;
+  box-shadow:0 14px 30px rgba(0,0,0,.35);
+}
+.carta-in{border:2px solid var(--barro);border-radius:4px;padding:1.1rem .8rem .8rem;text-align:center;height:100%}
+.carta-num{
+  position:absolute;top:1.1rem;left:1.1rem;z-index:2;
+  width:26px;height:26px;border-radius:50%;background:var(--rosa);color:#fff;
+  font-family:var(--serif);font-size:.8rem;display:grid;place-items:center;
+}
+.carta svg{width:74px;height:74px;margin:.35rem auto .9rem;display:block}
+.carta-nome{font-family:var(--serif);font-size:1.05rem;color:var(--barro);display:block;margin-bottom:.35rem}
+.carta p{margin:0;font-size:.88rem;color:#6B5645;line-height:1.5}
+
+/* ---------- visite ---------- */
+.visite-grid{display:grid;gap:clamp(2rem,5vw,3rem);grid-template-columns:1fr}
+@media (min-width:900px){.visite-grid{grid-template-columns:.85fr 1.15fr}}
+.horarios{list-style:none;margin:0 0 2rem;padding:0}
+.horarios li{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px solid rgba(247,241,227,.16)}
+.horarios .dia{font-weight:700}
+.horarios .hoje{color:var(--oro)}
+.horarios .fechado{color:#C9AFA5}
+.endereco{font-style:normal;margin-bottom:1.5rem;color:#EBD9BE}
+.endereco a{color:var(--oro)}
+.mapa{border:0;width:100%;aspect-ratio:4/3;border-radius:8px;filter:saturate(.85)}
+@media (min-width:900px){.mapa{aspect-ratio:16/11}}
+
+/* ---------- rodapé ---------- */
+.rodape{background:var(--noite);padding:2.5rem 0 2rem;font-size:.9rem;color:#C7AE94}
+.rodape-in{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.rodape img{width:104px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))}
+.rodape a{color:var(--oro)}
+.provecho{font-family:var(--serif);color:var(--oro);font-size:1.1rem;margin:0}
+.rodape-legal{width:100%;border-top:1px solid rgba(247,241,227,.12);padding-top:1.25rem;margin-top:.5rem;font-size:.82rem}
+
+.zap-float{
+  position:fixed;right:1rem;bottom:1rem;z-index:70;
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:#25D366;color:#0A2E17;font-weight:700;text-decoration:none;
+  padding:.8rem 1.15rem;border-radius:999px;box-shadow:0 10px 28px rgba(0,0,0,.4);
+}
+.zap-float svg{width:22px;height:22px;fill:currentColor}
+@media (max-width:520px){.zap-float span{display:none}.zap-float{padding:.9rem;border-radius:50%}}
+
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(14px);animation:sobe .7s cubic-bezier(.2,.7,.3,1) forwards}
+  .reveal:nth-child(2){animation-delay:.05s}
+  .reveal:nth-child(3){animation-delay:.2s}
+  .reveal:nth-child(4){animation-delay:.32s}
+  .reveal:nth-child(5){animation-delay:.44s}
+  .reveal:nth-child(6){animation-delay:.56s}
+  @keyframes sobe{to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<!-- padrões reutilizados na página -->
+<svg class="oculto" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="picado" width="78" height="62" patternUnits="userSpaceOnUse">
+      <rect width="78" height="3" fill="#D9A441"/>
+      <path fill="#C0512B" fill-rule="evenodd" d="M1.5 2 H37.5 V40 L19.5 54 L1.5 40 Z
+        M12.75 15 a6.75 6.75 0 1 0 13.5 0 a6.75 6.75 0 1 0 -13.5 0 Z
+        M3.8 27 a3.2 3.2 0 1 0 6.4 0 a3.2 3.2 0 1 0 -6.4 0 Z
+        M28.8 27 a3.2 3.2 0 1 0 6.4 0 a3.2 3.2 0 1 0 -6.4 0 Z
+        M19.5 27 L24 31.5 L19.5 36 L15 31.5 Z"/>
+      <path fill="#2C8C8C" fill-rule="evenodd" d="M40.5 2 H76.5 V40 L58.5 54 L40.5 40 Z
+        M51.75 15 a6.75 6.75 0 1 0 13.5 0 a6.75 6.75 0 1 0 -13.5 0 Z
+        M42.8 27 a3.2 3.2 0 1 0 6.4 0 a3.2 3.2 0 1 0 -6.4 0 Z
+        M67.8 27 a3.2 3.2 0 1 0 6.4 0 a3.2 3.2 0 1 0 -6.4 0 Z
+        M58.5 27 L63 31.5 L58.5 36 L54 31.5 Z"/>
+    </pattern>
+    <pattern id="azulejo" width="56" height="56" patternUnits="userSpaceOnUse">
+      <rect width="56" height="56" fill="none" stroke="#2C8C8C" stroke-width="1.2"/>
+      <path d="M28 9 33 23 47 28 33 33 28 47 23 33 9 28 23 23Z" fill="#2C8C8C"/>
+      <circle cx="28" cy="28" r="4.5" fill="#C0512B"/>
+      <circle cx="0" cy="0" r="4" fill="#D9A441"/><circle cx="56" cy="0" r="4" fill="#D9A441"/>
+      <circle cx="0" cy="56" r="4" fill="#D9A441"/><circle cx="56" cy="56" r="4" fill="#D9A441"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="nav" id="cabecalho">
+  <div class="wrap nav-in">
+    <a class="nav-mark" href="#topo">
+      <svg class="nav-selo" aria-hidden="true" focusable="false" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="dg" cx="45%" cy="38%" r="70%"><stop offset="0" stop-color="#6E1622"/><stop offset="1" stop-color="#380810"/></radialGradient></defs><circle cx="32" cy="32" r="30.5" fill="url(#dg)"/><circle cx="32" cy="32" r="30.5" fill="none" stroke="#2B323C" stroke-width="3"/><path d="M41.5 26h5v12h-5z" fill="#F3E3C6"/><path d="M13.5 44 32 24.5 50.5 44" fill="none" stroke="#F3E3C6" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/><g stroke-linecap="round" fill="none"><path d="M32 33.5v-5.2" stroke="#E8951E" stroke-width="2.4"/><path d="M27.6 34.2 25.6 30" stroke="#C0392B" stroke-width="2.1"/><path d="M36.4 34.2 38.4 30" stroke="#C0392B" stroke-width="2.1"/><path d="M23.8 36.4 21 33.6" stroke="#4E8A3C" stroke-width="1.9"/><path d="M40.2 36.4 43 33.6" stroke="#4E8A3C" stroke-width="1.9"/></g></svg>
+      <b>Chalé Guadalupe</b>
+    </a>
+
+    <span class="nav-risco" aria-hidden="true"></span>
+
+    <nav class="nav-links-wrap" aria-label="Seções do site">
+      <ul class="nav-links">
+        <li><a href="#rodizio">Rodízio</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#casa">A casa</a></li>
+        <li><a href="#visite">Onde estamos</a></li>
+      </ul>
+    </nav>
+
+    <p class="status" data-status hidden><i aria-hidden="true"></i><span></span></p>
+
+    <a class="btn btn-zap nav-cta" href="https://wa.me/5516981182375" target="_blank" rel="noopener">Reservar mesa</a>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="painel" aria-label="Abrir menu">
+      <svg class="ic-abrir" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="ic-fechar" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="painel" id="painel" hidden>
+    <div class="wrap">
+      <ul>
+        <li><a class="item" href="#rodizio">Rodízio</a></li>
+        <li><a class="item" href="#cardapio">Cardápio</a></li>
+        <li><a class="item" href="#casa">A casa</a></li>
+        <li><a class="item" href="#visite">Onde estamos</a></li>
+      </ul>
+      <p class="status" data-status hidden><i aria-hidden="true"></i><span></span></p>
+      <div class="painel-acoes">
+        <a class="btn btn-zap" href="https://wa.me/5516981182375" target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+5516981182375">Ligar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sarape-fina" aria-hidden="true"></div>
+</header>
+
+<main id="topo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="rays" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <img class="hero-logo reveal" src="data:image/webp;base64,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" width="420" height="420"
+           alt="Chalé Guadalupe — restaurante mexicano tradicional">
+      <h1 class="reveal">O único mexicano de Franca</h1>
+      <p class="lead reveal">Rodízio de tacos, burritos, fajitas e enchiladas, feito com tempero de casa.
+        E a pimenta sempre vem à parte — quem decide a coragem é você.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-zap" href="https://wa.me/5516981182375" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.5-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.7-.1 1.3Z"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#cardapio">Ver o cardápio</a>
+      </div>
+      <a class="stars" href="https://maps.app.goo.gl/P1oghmVLKSNRua2r7" target="_blank" rel="noopener">
+        <b>★ 4,3</b> <span>633 avaliações no Google</span>
+      </a>
+    </div>
+    <svg class="picado picado-topo" width="100%" height="62" aria-hidden="true" focusable="false">
+      <rect width="100%" height="62" fill="url(#picado)"/>
+    </svg>
+  </section>
+
+  <!-- ============ RODÍZIO ============ -->
+  <section class="band rodizio" id="rodizio">
+    <div class="wrap rodizio-grid">
+      <div>
+        <h2>O rodízio é o carro-chefe</h2>
+        <p class="lead">Os garçons passam nas mesas com as entradas e os pratos quentes do dia.
+          Você escolhe o que quiser, prova de tudo e repete o que gostou mais.</p>
+        <p class="lead">É o jeito mais fácil de conhecer a cozinha mexicana de verdade sem
+          ter que apostar em um prato só.</p>
+      </div>
+      <div class="ficha">
+        <h3>Rodízio mexicano</h3>
+        <p class="ficha-preco">R$ 00,00
+          <small>por pessoa &middot; de terça a sábado, no jantar</small>
+        </p>
+        <ul class="inclui">
+          <li>Antojitos liberados: nachos, guacamole e queijo quente</li>
+          <li>Tacos al pastor, de carne asada e de frango</li>
+          <li>Burritos, enchiladas e quesadillas</li>
+          <li>Fajitas na chapa, servidas chiando na mesa</li>
+          <li>Salsas da casa e pimenta à parte</li>
+        </ul>
+        <p class="meia">Crianças de 5 a 10 anos pagam meia. Até 4 anos não paga.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sarape" aria-hidden="true"></div>
+
+  <!-- ============ CARDÁPIO ============ -->
+  <section class="band cardapio" id="cardapio">
+    <svg class="azulejo" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#azulejo)"/></svg>
+    <div class="wrap">
+      <h2>Cardápio</h2>
+      <p class="lead">Também servimos à la carte, no almoço e no jantar.</p>
+
+      <div class="menu-grid">
+        <div class="cat">
+          <h3>Antojitos</h3>
+          <p class="cat-sub">As entradinhas, para dividir na mesa</p>
+          <div class="prato"><span class="prato-nome">Nachos supremos<span class="prato-desc">Totopos, chili con carne, queijo derretido e jalapeño</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Guacamole<span class="prato-desc">Abacate amassado no molcajete com limão e coentro</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Queso fundido<span class="prato-desc">Queijo derretido na panela de barro com chorizo</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Chili con carne<span class="prato-desc">Carne moída, feijão e especiarias, cozidos devagar</span></span><span class="prato-preco">R$ 00</span></div>
+        </div>
+
+        <div class="cat">
+          <h3>Tacos</h3>
+          <p class="cat-sub">Porção com três, na tortilha de milho</p>
+          <div class="prato"><span class="prato-nome">Al pastor<span class="prato-desc">Carne suína marinada com abacaxi — o mais pedido da casa</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Carne asada<span class="prato-desc">Carne bovina grelhada, cebola e coentro</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Tinga de pollo<span class="prato-desc">Frango desfiado no molho de tomate com pico de gallo</span></span><span class="prato-preco">R$ 00</span></div>
+        </div>
+
+        <div class="cat">
+          <h3>Platos fuertes</h3>
+          <p class="cat-sub">Os pratos principais, com arroz e feijão</p>
+          <div class="prato"><span class="prato-nome">Burrito<span class="prato-desc">Tortilha de trigo enrolada, recheada e gratinada</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Enchiladas<span class="prato-desc">Tortilhas banhadas na salsa vermelha e gratinadas</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Fajitas<span class="prato-desc">Tiras de carne ou frango na chapa quente, com pimentões</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Quesadillas<span class="prato-desc">Tortilha dobrada com queijo e recheio à escolha</span></span><span class="prato-preco">R$ 00</span></div>
+        </div>
+
+        <div class="cat">
+          <h3>La cantina</h3>
+          <p class="cat-sub">Drinks no balcão e o doce do fim</p>
+          <div class="prato"><span class="prato-nome">Margarita<span class="prato-desc">Tequila, limão e sal na borda</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Mojito<span class="prato-desc">Rum, hortelã e limão</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Cerveja long neck<span class="prato-desc">Sempre bem gelada</span></span><span class="prato-preco">R$ 00</span></div>
+          <div class="prato"><span class="prato-nome">Churros com doce de leite<span class="prato-desc">Para fechar a conta em paz</span></span><span class="prato-preco">R$ 00</span></div>
+        </div>
+      </div>
+
+      <dl class="glossario">
+        <div><dt>Taco</dt><dd>Tortilha pequena de milho, dobrada na mão. Come-se em duas mordidas.</dd></div>
+        <div><dt>Burrito</dt><dd>Tortilha grande de trigo, enrolada fechada como um embrulho.</dd></div>
+        <div><dt>Quesadilla</dt><dd>Tortilha dobrada ao meio com queijo dentro, tostada na chapa.</dd></div>
+        <div><dt>Salsa</dt><dd>O molho. Verde é de tomatillo, vermelha é de tomate com chile seco.</dd></div>
+      </dl>
+
+      <p class="nota">O cardápio muda de acordo com a estação. Fale com a gente no WhatsApp para saber o que está saindo hoje.</p>
+    </div>
+  </section>
+
+  <div class="sarape" aria-hidden="true"></div>
+
+  <!-- ============ A CASA ============ -->
+  <section class="band casa" id="casa">
+    <div class="wrap">
+      <div class="casa-topo">
+        <h2>Tempero é o que a gente faz melhor</h2>
+        <p class="lead">Comida mexicana não é só pimenta: é marinada, tempo de cozimento e salsa
+          feita na casa todos os dias. Estas são as quatro cartas que a gente sempre tira.</p>
+      </div>
+
+      <div class="baraja">
+        <figure class="carta">
+          <span class="carta-num">1</span>
+          <div class="carta-in">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Ilustração de pimenta">
+              <path d="M34 12c4-6 12-6 14-2" stroke="#1E4A38" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M34 14c8 2 12 10 10 20-2 12-12 20-22 18-6-1-8-6-4-9 8-6 12-14 12-22 0-4 2-7 4-7Z" fill="#C0512B"/>
+              <path d="M30 24c3 6 2 16-4 22" stroke="#DE7B4C" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span class="carta-nome">El Chile</span>
+            <p>A pimenta vem sempre à parte. Você decide o quanto de coragem quer no prato.</p>
+          </div>
+        </figure>
+
+        <figure class="carta">
+          <span class="carta-num">2</span>
+          <div class="carta-in">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Ilustração de coração">
+              <path d="M32 54S8 40 8 24c0-8 6-14 13-14 5 0 9 3 11 7 2-4 6-7 11-7 7 0 13 6 13 14 0 16-24 30-24 30Z" fill="#D6156B"/>
+              <path d="M32 46S16 36 16 25c0-4 3-7 6-7" stroke="#F7F1E3" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>
+            </svg>
+            <span class="carta-nome">El Corazón</span>
+            <p>Mesa de família. Tem espaço para grupo, aniversário e criança correndo em paz.</p>
+          </div>
+        </figure>
+
+        <figure class="carta">
+          <span class="carta-num">3</span>
+          <div class="carta-in">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Ilustração de sol">
+              <g stroke="#D9A441" stroke-width="4" stroke-linecap="round">
+                <path d="M32 4v7M32 53v7M4 32h7M53 32h7M12 12l5 5M47 47l5 5M52 12l-5 5M17 47l-5 5"/>
+              </g>
+              <circle cx="32" cy="32" r="15" fill="#D9A441"/>
+              <circle cx="27" cy="29" r="2" fill="#2B1A12"/><circle cx="37" cy="29" r="2" fill="#2B1A12"/>
+              <path d="M26 37c3 4 9 4 12 0" stroke="#2B1A12" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span class="carta-nome">El Sol</span>
+            <p>Almoço de segunda a sexta, das 11h às 14h, para quem tem uma hora só.</p>
+          </div>
+        </figure>
+
+        <figure class="carta">
+          <span class="carta-num">4</span>
+          <div class="carta-in">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Ilustração do chalé">
+              <path d="M10 26 32 12l22 14Z" fill="#C0512B"/>
+              <rect x="14" y="26" width="36" height="26" fill="#E0B486"/>
+              <path d="M8 26h48v5H8Z" fill="#DE7B4C"/>
+              <path d="M26 52V38a6 6 0 0 1 12 0v14Z" fill="#7A4A2B"/>
+              <rect x="17" y="34" width="6" height="7" fill="#7A4A2B"/>
+              <rect x="41" y="34" width="6" height="7" fill="#7A4A2B"/>
+              <g fill="#2C8C8C"><circle cx="26" cy="34" r="2"/><circle cx="32" cy="32" r="2"/><circle cx="38" cy="34" r="2"/></g>
+            </svg>
+            <span class="carta-nome">La Casa</span>
+            <p>As salsas, o guacamole e as marinadas saem da cozinha daqui, feitos no dia.</p>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="sarape" aria-hidden="true"></div>
+
+  <!-- ============ VISITE ============ -->
+  <section class="band" id="visite">
+    <div class="wrap visite-grid">
+      <div>
+        <h2>Onde estamos</h2>
+        <address class="endereco">
+          Rua Jonas Deocleciano Ribeiro, 779<br>
+          Vila Champagnat — Franca/SP<br>
+          CEP 14400-230<br><br>
+          <a href="tel:+5516981182375">(16) 98118-2375</a>
+        </address>
+
+        <ul class="horarios" id="horarios">
+          <li data-dia="1"><span class="dia">Segunda</span> <span>11h–14h</span></li>
+          <li data-dia="2"><span class="dia">Terça</span> <span>11h–14h e 19h–23h</span></li>
+          <li data-dia="3"><span class="dia">Quarta</span> <span>11h–14h e 19h–23h</span></li>
+          <li data-dia="4"><span class="dia">Quinta</span> <span>11h–14h e 19h–23h</span></li>
+          <li data-dia="5"><span class="dia">Sexta</span> <span>11h–14h e 19h–23h</span></li>
+          <li data-dia="6"><span class="dia">Sábado</span> <span>19h–23h</span></li>
+          <li data-dia="0"><span class="dia">Domingo</span> <span class="fechado">Fechado</span></li>
+        </ul>
+
+        <a class="btn btn-zap" href="https://wa.me/5516981182375" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+
+      <iframe class="mapa" title="Mapa com a localização do Chalé Guadalupe"
+        src="https://maps.google.com/maps?q=-20.547268,-47.4023126&z=17&hl=pt-BR&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main>
+
+<svg class="picado" width="100%" height="62" aria-hidden="true" focusable="false">
+  <rect width="100%" height="62" fill="url(#picado)"/>
+</svg>
+
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <img src="data:image/webp;base64,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" alt="" aria-hidden="true">
+    <div>
+      <p class="provecho">¡Buen provecho!</p>
+      <strong>Chalé Guadalupe</strong> — restaurante mexicano tradicional<br>
+      Rua Jonas Deocleciano Ribeiro, 779 — Franca/SP
+    </div>
+    <div>
+      <a href="https://maps.app.goo.gl/P1oghmVLKSNRua2r7" target="_blank" rel="noopener">Google Maps</a> &nbsp;·&nbsp;
+      <a href="https://www.facebook.com/guadalupemexicangrill/" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp;
+      <a href="https://wa.me/5516981182375" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p class="rodape-legal">© <span id="ano">2026</span> Chalé Guadalupe. Preços e cardápio sujeitos a alteração.</p>
+  </div>
+</footer>
+
+<a class="zap-float" href="https://wa.me/5516981182375" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3.1-1.3-5.1-4.4-5.3-4.6-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.2c.1.2.1.4 0 .6l-.4.5-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l2.1 1c.3.1.5.2.5.4.1.1.1.7-.1 1.3Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Chalé Guadalupe",
+  "description":"Restaurante mexicano tradicional em Franca/SP, com rodízio, tacos, burritos, fajitas e enchiladas.",
+  "servesCuisine":"Mexicana",
+  "priceRange":"$$",
+  "telephone":"+5516981182375",
+  "address":{"@type":"PostalAddress","streetAddress":"Rua Jonas Deocleciano Ribeiro, 779","addressLocality":"Franca","addressRegion":"SP","postalCode":"14400-230","addressCountry":"BR"},
+  "geo":{"@type":"GeoCoordinates","latitude":-20.547268,"longitude":-47.4023126},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"11:00","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"14:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"19:00","closes":"23:00"}
+  ]
+}
+</script>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  /* horários de funcionamento, por dia da semana */
+  var GRADE = {0:[],1:[[11,14]],2:[[11,14],[19,23]],3:[[11,14],[19,23]],
+               4:[[11,14],[19,23]],5:[[11,14],[19,23]],6:[[19,23]]};
+  var DIAS = ['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
+
+  /* destaca o dia de hoje na lista de horários */
+  var hoje = new Date().getDay();
+  var linha = document.querySelector('#horarios li[data-dia="' + hoje + '"]');
+  if (linha) {
+    linha.classList.add('hoje');
+    linha.querySelector('.dia').textContent += ' (hoje)';
+  }
+
+  /* aberto ou fechado agora */
+  function situacao() {
+    var d = new Date(), dia = d.getDay(), h = d.getHours() + d.getMinutes() / 60;
+    var faixas = GRADE[dia] || [], i;
+    for (i = 0; i < faixas.length; i++)
+      if (h >= faixas[i][0] && h < faixas[i][1])
+        return {aberto:true, titulo:'Aberto agora', detalhe:'até ' + faixas[i][1] + 'h'};
+    for (i = 0; i < faixas.length; i++)
+      if (h < faixas[i][0])
+        return {aberto:false, titulo:'Fechado', detalhe:'abre às ' + faixas[i][0] + 'h'};
+    for (var n = 1; n <= 7; n++) {
+      var prox = (dia + n) % 7, g = GRADE[prox];
+      if (g && g.length)
+        return {aberto:false, titulo:'Fechado',
+                detalhe:'abre ' + (n === 1 ? 'amanhã' : DIAS[prox]) + ' às ' + g[0][0] + 'h'};
+    }
+    return {aberto:false, titulo:'Fechado', detalhe:''};
+  }
+  function pintaStatus() {
+    var s = situacao();
+    document.querySelectorAll('[data-status]').forEach(function (el) {
+      el.hidden = false;
+      el.classList.toggle('aberto', s.aberto);
+      el.querySelector('span').innerHTML = '<b>' + s.titulo + '</b> <em>' + s.detalhe + '</em>';
+    });
+  }
+  pintaStatus();
+  setInterval(pintaStatus, 60000);
+
+  /* menu do celular */
+  var botao = document.getElementById('menuBtn'), painel = document.getElementById('painel');
+  function fechaMenu() { painel.hidden = true; botao.setAttribute('aria-expanded','false'); botao.setAttribute('aria-label','Abrir menu'); }
+  botao.addEventListener('click', function () {
+    var abrir = painel.hidden;
+    painel.hidden = !abrir;
+    botao.setAttribute('aria-expanded', String(abrir));
+    botao.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+  });
+  painel.addEventListener('click', function (e) { if (e.target.closest('a')) fechaMenu(); });
+  addEventListener('keydown', function (e) { if (e.key === 'Escape') fechaMenu(); });
+
+  /* marca no menu a seção que está na tela */
+  var links = document.querySelectorAll('.nav-links a');
+  if ('IntersectionObserver' in window) {
+    var olho = new IntersectionObserver(function (itens) {
+      itens.forEach(function (item) {
+        if (!item.isIntersecting) return;
+        links.forEach(function (a) { a.removeAttribute('aria-current'); });
+        var alvo = document.querySelector('.nav-links a[href="#' + item.target.id + '"]');
+        if (alvo) alvo.setAttribute('aria-current', 'true');
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    ['rodizio','cardapio','casa','visite'].forEach(function (id) {
+      var s = document.getElementById(id);
+      if (s) olho.observe(s);
+    });
+  }
+</script>
+</body>
+</html>
